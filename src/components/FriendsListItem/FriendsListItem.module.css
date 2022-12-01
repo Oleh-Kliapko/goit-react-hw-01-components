@@ -1,0 +1,33 @@
+.item {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  gap: 30px;
+  background-color: white;
+  box-shadow: 2px 5px 10px gray;
+}
+
+.status {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.isOnline {
+  background-color: green;
+}
+
+.isOffline {
+  background-color: red;
+}
+
+.avatar {
+  display: block;
+  width: 100px;
+  height: auto;
+}
+
+.name {
+  font-size: 30px;
+}

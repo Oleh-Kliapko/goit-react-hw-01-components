@@ -28,5 +28,11 @@
     "name": "Poly",
     "isOnline": false,
     "id": 1284
+  },
+  {
+    "avatar": "https://cdn-icons-png.flaticon.com/512/9079/9079558.png",
+    "name": "Petro Petrovich",
+    "isOnline": false,
+    "id": 1558
   }
 ]
