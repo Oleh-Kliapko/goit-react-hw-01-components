@@ -1,16 +1,18 @@
 .item {
   display: flex;
   align-items: center;
-  padding: 20px;
+  padding: 10px;
+  padding-left: 20px;
+  margin: 0;
   width: 100%;
   gap: 30px;
   background-color: white;
-  box-shadow: 2px 5px 10px gray;
+  box-shadow: 2px 3px 5px gray;
 }
 
 .status {
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
 }
 
@@ -24,10 +26,10 @@
 
 .avatar {
   display: block;
-  width: 100px;
+  max-width: 100%;
   height: auto;
 }
 
 .name {
-  font-size: 30px;
+  font-size: 20px;
 }

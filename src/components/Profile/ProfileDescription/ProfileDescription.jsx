@@ -1,4 +1,4 @@
-import css from 'components/ProfileDescription/ProfileDescription.module.css';
+import css from '../ProfileDescription/ProfileDescription.module.css';
 import PropTypes from 'prop-types';
 
 export const ProfileDescription = ({

@@ -1,6 +1,6 @@
-import upcomingData from '../../components/data.json';
+import upcomingData from '../../components/stats.json';
 import css from './Statistics.module.css';
-import { StatisticsList } from '../StatisticsList/StatisticsList';
+import { StatisticsList } from './StatisticsList/StatisticsList';
 
 export const Statistics = () => {
   return (

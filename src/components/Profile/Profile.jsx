@@ -1,7 +1,7 @@
 import user from '../../components/user.json';
 import css from './ProfileWrapper.module.css';
-import { ProfileDescription } from '../ProfileDescription/ProfileDescription';
-import { ProfileStats } from '../ProfileStats/ProfileStats';
+import { ProfileDescription } from './ProfileDescription/ProfileDescription';
+import { ProfileStats } from './ProfileStats/ProfileStats';
 
 export const Profile = () => {
   const {
