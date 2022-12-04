@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 export const TransactionWrapper = styled.section`
   width: 400px;
   padding: 60px;
-  background-color: rgb(217, 213, 213, 0.5);
+  background-color: ${p => p.theme.colors.wrapper};
   border-radius: 10px;
   display: flex;
   flex-direction: column;

@@ -10,7 +10,7 @@ export const Description = styled.div`
   padding-bottom: 20px;
   gap: 10px;
   border-radius: 6px;
-  box-shadow: 0px 2px 5px rgb(217, 213, 213, 0.5);
+  box-shadow: 0px 2px 5px ${p => p.theme.colors.wrapper};
 `;
 
 export const Avatar = styled.img`
@@ -18,7 +18,7 @@ export const Avatar = styled.img`
   height: auto;
   border-radius: 50%;
   margin: 0;
-  background-color: rgb(217, 213, 213, 0.5);
+  background-color: ${p => p.theme.colors.wrapper};
 `;
 
 export const Name = styled.p`
@@ -30,7 +30,7 @@ export const Name = styled.p`
 export const Tag = styled.p`
   font-size: 18px;
   letter-spacing: 1.1;
-  color: rgb(103, 102, 102);
+  color: ${p => p.theme.colors.heading};
   margin: 0;
 `;
 

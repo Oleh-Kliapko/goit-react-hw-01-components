@@ -6,7 +6,7 @@ export const Item = styled.li`
   align-items: center;
   padding: 16px;
   margin: auto;
-  color: white;
+  color: ${p => p.theme.colors.secondary};
 `;
 
 export const Label = styled.span`

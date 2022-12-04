@@ -1,8 +1,9 @@
 import styled from '@emotion/styled';
 
-export const StatisticsWrapper = styled.section`  width: 400px;
+export const StatisticsWrapper = styled.section`
+  width: 400px;
   padding: 60px;
-  background-color: rgb(217, 213, 213, 0.5);
+  background-color: ${p => p.theme.colors.wrapper};
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -11,7 +12,7 @@ export const StatisticsWrapper = styled.section`  width: 400px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 60px;
-}`;
+`;
 
 export const Title = styled.h2`
   width: 100%;
@@ -19,6 +20,6 @@ export const Title = styled.h2`
   padding-bottom: 30px;
   text-align: center;
   margin: 0;
-  background-color: white;
-  color: rgb(110, 110, 110);
+  background-color: ${p => p.theme.colors.secondary};
+  color: ${p => p.theme.colors.heading};
 `;

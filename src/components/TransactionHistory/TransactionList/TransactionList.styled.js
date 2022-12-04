@@ -6,8 +6,8 @@ export const TableWrapper = styled.table`
 `;
 
 export const TableHead = styled.thead`
-  background-color: darkcyan;
-  color: white;
+  background-color: ${p => p.theme.colors.heading};
+  color: ${p => p.theme.colors.secondary};
 `;
 
 export const TableColumnName = styled.th`
