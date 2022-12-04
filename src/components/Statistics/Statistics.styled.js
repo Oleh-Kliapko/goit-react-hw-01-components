@@ -1,5 +1,6 @@
-.friends {
-  width: 400px;
+import styled from '@emotion/styled';
+
+export const StatisticsWrapper = styled.section`  width: 400px;
   padding: 60px;
   background-color: rgb(217, 213, 213, 0.5);
   border-radius: 10px;
@@ -10,12 +11,14 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 60px;
-}
+}`;
 
-.title {
+export const Title = styled.h2`
   width: 100%;
+  padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
   margin: 0;
+  background-color: white;
   color: rgb(110, 110, 110);
-}
+`;

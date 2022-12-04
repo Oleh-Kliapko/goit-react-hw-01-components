@@ -1,4 +1,6 @@
-.statistics {
+import styled from '@emotion/styled';
+
+export const ProfileWrapper = styled.div`
   width: 400px;
   padding: 60px;
   background-color: rgb(217, 213, 213, 0.5);
@@ -9,15 +11,6 @@
   align-items: center;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 40px;
   margin-bottom: 60px;
-}
-
-.title {
-  width: 100%;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  text-align: center;
-  margin: 0;
-  background-color: white;
-  color: rgb(110, 110, 110);
-}
+`;

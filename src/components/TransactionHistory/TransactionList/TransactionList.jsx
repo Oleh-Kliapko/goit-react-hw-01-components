@@ -1,17 +1,21 @@
-import css from './TransactionList.module.css';
 import PropTypes from 'prop-types';
+import {
+  TableWrapper,
+  TableHead,
+  TableColumnName,
+} from './TransactionList.styled';
 import { TransactionListItem } from '../TransactionListItem/TransactionListItem';
 
 export const TransactionList = ({ transactions }) => {
   return (
-    <table className={css['transaction-history']}>
-      <thead className={css.thead}>
+    <TableWrapper>
+      <TableHead>
         <tr>
-          <th className={css.th}>Type</th>
-          <th className={css.th}>Amount</th>
-          <th className={css.th}>Currency</th>
+          <TableColumnName>Type</TableColumnName>
+          <TableColumnName>Amount</TableColumnName>
+          <TableColumnName>Currency</TableColumnName>
         </tr>
-      </thead>
+      </TableHead>
       {transactions.map(({ id, type, amount, currency }) => {
         return (
           <TransactionListItem
@@ -22,7 +26,7 @@ export const TransactionList = ({ transactions }) => {
           />
         );
       })}
-    </table>
+    </TableWrapper>
   );
 };
 

@@ -1,12 +1,12 @@
 import friends from '../../components/friends.json';
-import css from './Friends.module.css';
 import { FriendsList } from './FriendsList/FriendsList';
+import { Section, Title } from './Friends.styled';
 
 export const Friends = () => {
   return (
-    <section className={css.friends}>
-      <h2 className={css.title}>USER'S FRIENDS</h2>
+    <Section>
+      <Title>USER'S FRIENDS</Title>
       <FriendsList friends={friends} />
-    </section>
+    </Section>
   );
 };

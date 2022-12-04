@@ -1,5 +1,5 @@
 import user from '../../components/user.json';
-import css from './ProfileWrapper.module.css';
+import { ProfileWrapper } from './ProfileWrapper.styled';
 import { ProfileDescription } from './ProfileDescription/ProfileDescription';
 import { ProfileStats } from './ProfileStats/ProfileStats';
 
@@ -12,7 +12,7 @@ export const Profile = () => {
     stats: { followers, views, likes },
   } = user;
   return (
-    <div className={css.profile}>
+    <ProfileWrapper>
       <ProfileDescription
         userName={username}
         userAvatar={avatar}
@@ -20,6 +20,6 @@ export const Profile = () => {
         userLocation={location}
       />
       <ProfileStats followers={followers} views={views} likes={likes} />
-    </div>
+    </ProfileWrapper>
   );
 };

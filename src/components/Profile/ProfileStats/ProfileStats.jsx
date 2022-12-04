@@ -1,22 +1,22 @@
-import css from '../ProfileStats/ProfileStats.module.css';
 import PropTypes from 'prop-types';
+import { Stats, StatsInfo, Label, Quantity } from './ProfileStats.styled';
 
 export const ProfileStats = ({ followers, views, likes }) => {
   return (
-    <ul className={css.stats}>
-      <li className={css['stats-info']}>
-        <span className={css.label}>Followers</span>
-        <span className={css.quantity}>{followers}</span>
-      </li>
-      <li className={css['stats-info']}>
-        <span className={css.label}>Views</span>
-        <span className={css.quantity}>{views}</span>
-      </li>
-      <li className={css['stats-info']}>
-        <span className={css.label}>Likes</span>
-        <span className={css.quantity}>{likes}</span>
-      </li>
-    </ul>
+    <Stats>
+      <StatsInfo>
+        <Label>Followers</Label>
+        <Quantity>{followers}</Quantity>
+      </StatsInfo>
+      <StatsInfo>
+        <Label>Views</Label>
+        <Quantity>{views}</Quantity>
+      </StatsInfo>
+      <StatsInfo>
+        <Label>Likes</Label>
+        <Quantity>{likes}</Quantity>
+      </StatsInfo>
+    </Stats>
   );
 };
 

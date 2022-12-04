@@ -1,16 +1,16 @@
 import PropTypes from 'prop-types';
-import css from './StatisticsList.module.css';
+import { StatList } from './StatisticsList.styled';
 import { StatisticsItem } from '../StatisticsItem/StatisticsItem';
 
 export const StatisticsList = ({ data }) => {
   return (
-    <ul className={css['stat-list']}>
+    <StatList>
       {data.map(({ id, label, percentage }) => {
         return (
           <StatisticsItem key={id} label={label} percentage={percentage} />
         );
       })}
-    </ul>
+    </StatList>
   );
 };
 

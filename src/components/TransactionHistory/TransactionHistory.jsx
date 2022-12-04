@@ -1,12 +1,12 @@
 import transactions from '../transactions.json';
-import css from './TransactionHistory.module.css';
+import { TransactionWrapper, Title } from './TransactionHistory.styled';
 import { TransactionList } from './TransactionList/TransactionList';
 
 export const TransactionHistory = () => {
   return (
-    <section className={css.transaction}>
-      <h2 className={css.title}>TRANSACTION HISTORY</h2>
+    <TransactionWrapper>
+      <Title>TRANSACTION HISTORY</Title>
       <TransactionList transactions={transactions} />
-    </section>
+    </TransactionWrapper>
   );
 };

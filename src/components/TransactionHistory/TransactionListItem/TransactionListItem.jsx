@@ -1,15 +1,15 @@
-import css from './TransactionListItem.module.css';
 import PropTypes from 'prop-types';
+import { TableValue, TableBody } from './TransactionListItem.styled';
 
 export const TransactionListItem = ({ type, amount, currency }) => {
   return (
-    <tbody className={css.tbody}>
+    <TableBody>
       <tr>
-        <td className={css.td}>{type}</td>
-        <td className={css.td}>{amount}</td>
-        <td className={css.td}>{currency}</td>
+        <TableValue>{type}</TableValue>
+        <TableValue>{amount}</TableValue>
+        <TableValue>{currency}</TableValue>
       </tr>
-    </tbody>
+    </TableBody>
   );
 };
 

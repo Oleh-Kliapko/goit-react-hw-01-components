@@ -1,5 +1,11 @@
-import css from '../ProfileDescription/ProfileDescription.module.css';
 import PropTypes from 'prop-types';
+import {
+  Description,
+  Avatar,
+  Name,
+  Tag,
+  Location,
+} from './ProfileDescription.styled';
 
 export const ProfileDescription = ({
   userAvatar,
@@ -8,12 +14,12 @@ export const ProfileDescription = ({
   userLocation,
 }) => {
   return (
-    <div className={css.description}>
-      <img src={userAvatar} alt="User avatar" className={css.avatar} />
-      <p className={css.name}>{userName}</p>
-      <p className={css.tag}>@{userTag}</p>
-      <p className={css.location}>{userLocation}</p>
-    </div>
+    <Description>
+      <Avatar src={userAvatar} alt="User avatar" />
+      <Name>{userName}</Name>
+      <Tag>@{userTag}</Tag>
+      <Location>{userLocation}</Location>
+    </Description>
   );
 };
 
