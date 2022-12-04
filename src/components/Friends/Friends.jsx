@@ -1,6 +1,5 @@
 import friends from '../../components/friends.json';
 import { FriendsList } from './FriendsList/FriendsList';
-import { Title } from './Friends.styled';
 import { Box } from '../Box';
 import { theme } from '../../theme';
 
@@ -8,7 +7,6 @@ export const Friends = () => {
   return (
     <Box
       width={400}
-      p={5}
       bg={theme.colors.wrapper}
       borderRadius="10px"
       display="flex"
@@ -18,9 +16,19 @@ export const Friends = () => {
       ml="auto"
       mr="auto"
       mb={5}
+      p={5}
       as="section"
     >
-      <Title>USER'S FRIENDS</Title>
+      <Box
+        width="100%"
+        pb={4}
+        textAlign="center"
+        m={0}
+        color={theme.colors.heading}
+        as="h2"
+      >
+        USER'S FRIENDS
+      </Box>
       <FriendsList friends={friends} />
     </Box>
   );

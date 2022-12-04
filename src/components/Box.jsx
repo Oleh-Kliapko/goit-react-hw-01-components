@@ -12,14 +12,14 @@ import {
   typography,
 } from 'styled-system';
 
-export const Box = styled('div')(
-  space,
-  layout,
-  color,
-  flexbox,
-  background,
-  border,
-  position,
-  shadow,
-  typography
-);
+export const Box = styled.div`
+  ${space}
+  ${layout}
+  ${color}
+  ${flexbox}
+  ${background}
+  ${border}
+  ${position}
+  ${shadow}
+  ${typography}
+`;
